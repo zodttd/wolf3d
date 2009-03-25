@@ -93,6 +93,15 @@
 		72935BA00F6B2D9D0085DD28 /* wavfile.c in Sources */ = {isa = PBXBuildFile; fileRef = 72935B6E0F6B2D9D0085DD28 /* wavfile.c */; };
 		72935BA20F6B2D9D0085DD28 /* zmem.c in Sources */ = {isa = PBXBuildFile; fileRef = 72935B720F6B2D9D0085DD28 /* zmem.c */; };
 		72A7E8F70F5F2063005B83C0 /* iphone_menus.c in Sources */ = {isa = PBXBuildFile; fileRef = 72A7E8F60F5F2063005B83C0 /* iphone_menus.c */; };
+		8C5068E10F7A0106005C39CB /* AltAds.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5068D40F7A0106005C39CB /* AltAds.m */; };
+		8C506CC30F7A0A11005C39CB /* splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C506CC20F7A0A11005C39CB /* splashscreen.png */; };
+		8C506CDE0F7A0C0B005C39CB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C506CDD0F7A0C0B005C39CB /* SystemConfiguration.framework */; };
+		8C506CE20F7A0C21005C39CB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C506CE10F7A0C21005C39CB /* CoreLocation.framework */; };
+		8C506CE60F7A0C4B005C39CB /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C506CE50F7A0C4B005C39CB /* libsqlite3.0.dylib */; };
+		8C506D7A0F7A1AF3005C39CB /* Mobclix.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5068D80F7A0106005C39CB /* Mobclix.a */; };
+		8C506D7B0F7A1AF3005C39CB /* MobclixAds.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5068D90F7A0106005C39CB /* MobclixAds.o */; };
+		8C506D7C0F7A1AF3005C39CB /* libAdMobDevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5068DA0F7A0106005C39CB /* libAdMobDevice.a */; };
+		8C506D7D0F7A1AF3005C39CB /* libAdMobSimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5068DB0F7A0106005C39CB /* libAdMobSimulator.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -252,6 +261,21 @@
 		72935B730F6B2D9D0085DD28 /* zmem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zmem.h; path = ../env/zmem.h; sourceTree = SOURCE_ROOT; };
 		72A7E8F30F5F2001005B83C0 /* iphone_wolf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iphone_wolf.h; sourceTree = "<group>"; };
 		72A7E8F60F5F2063005B83C0 /* iphone_menus.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iphone_menus.c; sourceTree = "<group>"; };
+		8C5068D10F7A0106005C39CB /* AdMobDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMobDelegateProtocol.h; sourceTree = "<group>"; };
+		8C5068D20F7A0106005C39CB /* AdMobView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMobView.h; sourceTree = "<group>"; };
+		8C5068D30F7A0106005C39CB /* AltAds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AltAds.h; sourceTree = "<group>"; };
+		8C5068D40F7A0106005C39CB /* AltAds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AltAds.m; sourceTree = "<group>"; };
+		8C5068D60F7A0106005C39CB /* AltAdsSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AltAdsSupport.h; sourceTree = "<group>"; };
+		8C5068D80F7A0106005C39CB /* Mobclix.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = Mobclix.a; sourceTree = "<group>"; };
+		8C5068D90F7A0106005C39CB /* MobclixAds.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = MobclixAds.o; sourceTree = "<group>"; };
+		8C5068DA0F7A0106005C39CB /* libAdMobDevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdMobDevice.a; sourceTree = "<group>"; };
+		8C5068DB0F7A0106005C39CB /* libAdMobSimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdMobSimulator.a; sourceTree = "<group>"; };
+		8C5068DC0F7A0106005C39CB /* Mobclix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mobclix.h; sourceTree = "<group>"; };
+		8C5068DD0F7A0106005C39CB /* MobclixAds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobclixAds.h; sourceTree = "<group>"; };
+		8C506CC20F7A0A11005C39CB /* splashscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreen.png; sourceTree = "<group>"; };
+		8C506CDD0F7A0C0B005C39CB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8C506CE10F7A0C21005C39CB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8C506CE50F7A0C4B005C39CB /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -267,6 +291,13 @@
 				43E8D4E00F51B48B003F09B2 /* OpenAL.framework in Frameworks */,
 				4333CCE80F5CC23E00AE2B6F /* AudioToolbox.framework in Frameworks */,
 				43AE7E9F0F67387500B2F562 /* CoreGraphics.framework in Frameworks */,
+				8C506CDE0F7A0C0B005C39CB /* SystemConfiguration.framework in Frameworks */,
+				8C506CE20F7A0C21005C39CB /* CoreLocation.framework in Frameworks */,
+				8C506CE60F7A0C4B005C39CB /* libsqlite3.0.dylib in Frameworks */,
+				8C506D7A0F7A1AF3005C39CB /* Mobclix.a in Frameworks */,
+				8C506D7B0F7A1AF3005C39CB /* MobclixAds.o in Frameworks */,
+				8C506D7C0F7A1AF3005C39CB /* libAdMobDevice.a in Frameworks */,
+				8C506D7D0F7A1AF3005C39CB /* libAdMobSimulator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +328,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				8C5068D00F7A0106005C39CB /* AdMob */,
 				72935B180F6B2D630085DD28 /* env */,
 				7229CC5A0F6B324A004123C5 /* tremor */,
 				72935B190F6B2D720085DD28 /* wolf */,
@@ -320,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				43AE7CAA0F61FB0E00B2F562 /* wolf3dEpisode1_icon.png */,
+				8C506CC20F7A0A11005C39CB /* splashscreen.png */,
 				43CF02FE0F56974E00E4A23D /* Default.png */,
 				43CF02EC0F56955F00E4A23D /* wolf3d_icon.png */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
@@ -331,6 +364,9 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8C506CE50F7A0C4B005C39CB /* libsqlite3.0.dylib */,
+				8C506CE10F7A0C21005C39CB /* CoreLocation.framework */,
+				8C506CDD0F7A0C0B005C39CB /* SystemConfiguration.framework */,
 				4333CCE70F5CC23E00AE2B6F /* AudioToolbox.framework */,
 				43E8D4DF0F51B48B003F09B2 /* OpenAL.framework */,
 				28FD15070DC6FC5B0079059D /* QuartzCore.framework */,
@@ -493,6 +529,32 @@
 			name = wolf;
 			sourceTree = "<group>";
 		};
+		8C5068D00F7A0106005C39CB /* AdMob */ = {
+			isa = PBXGroup;
+			children = (
+				8C5068D10F7A0106005C39CB /* AdMobDelegateProtocol.h */,
+				8C5068D20F7A0106005C39CB /* AdMobView.h */,
+				8C5068D30F7A0106005C39CB /* AltAds.h */,
+				8C5068D40F7A0106005C39CB /* AltAds.m */,
+				8C5068D60F7A0106005C39CB /* AltAdsSupport.h */,
+				8C5068D70F7A0106005C39CB /* ARM */,
+				8C5068DA0F7A0106005C39CB /* libAdMobDevice.a */,
+				8C5068DB0F7A0106005C39CB /* libAdMobSimulator.a */,
+				8C5068DC0F7A0106005C39CB /* Mobclix.h */,
+				8C5068DD0F7A0106005C39CB /* MobclixAds.h */,
+			);
+			path = AdMob;
+			sourceTree = "<group>";
+		};
+		8C5068D70F7A0106005C39CB /* ARM */ = {
+			isa = PBXGroup;
+			children = (
+				8C5068D80F7A0106005C39CB /* Mobclix.a */,
+				8C5068D90F7A0106005C39CB /* MobclixAds.o */,
+			);
+			path = ARM;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -541,6 +603,7 @@
 				43CF02FF0F56974E00E4A23D /* Default.png in Resources */,
 				4364BF3F0F5CB25900F29317 /* dist.plist in Resources */,
 				43AE7CAB0F61FB0E00B2F562 /* wolf3dEpisode1_icon.png in Resources */,
+				8C506CC30F7A0A11005C39CB /* splashscreen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,6 +704,7 @@
 				7229CE4A0F6C89F8004123C5 /* EAGLView.m in Sources */,
 				7229CE4C0F6C89F8004123C5 /* wolf3dAppDelegate.m in Sources */,
 				7229CE550F6C8CDE004123C5 /* gles_glue.c in Sources */,
+				8C5068E10F7A0106005C39CB /* AltAds.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,6 +724,12 @@
 				GCC_PREPROCESSOR_DEFINITIONS = IPHONE;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AdMob/ARM\"",
+					"\"$(SRCROOT)/AdMob\"",
+					"\"$(SRCROOT)/AdMob/X86\"",
+				);
 				PRODUCT_NAME = wolf3d;
 				PROFILE_PREFIX = com.idsoftware;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "242E7162-329E-4733-B361-E893AB528543";
@@ -670,18 +740,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: zod Stark";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zod Stark";
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = wolf3d_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = IPHONE;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AdMob/ARM\"",
+					"\"$(SRCROOT)/AdMob\"",
+					"\"$(SRCROOT)/AdMob/X86\"",
+				);
 				PRODUCT_NAME = wolf3d;
 				PROFILE_PREFIX = com.idsoftware;
-				PROVISIONING_PROFILE = "EED0C2DF-9EF1-43B7-B403-E303FC669713";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EED0C2DF-9EF1-43B7-B403-E303FC669713";
 			};
 			name = Release;
 		};
@@ -712,6 +786,12 @@
 				GCC_PREPROCESSOR_DEFINITIONS = IPHONE;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AdMob/ARM\"",
+					"\"$(SRCROOT)/AdMob\"",
+					"\"$(SRCROOT)/AdMob/X86\"",
+				);
 				PRODUCT_NAME = wolf3d;
 				PROFILE_PREFIX = nu.r3;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "31C73095-0DD9-4ABA-BB25-8D23F661F10F";
@@ -747,6 +827,12 @@
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AdMob/ARM\"",
+					"\"$(SRCROOT)/AdMob\"",
+					"\"$(SRCROOT)/AdMob/X86\"",
+				);
 				PRODUCT_NAME = wolf3dEpisode1;
 				PROFILE_PREFIX = com.Spookysoft;
 				PROVISIONING_PROFILE = "EED0C2DF-9EF1-43B7-B403-E303FC669713";
@@ -784,6 +870,12 @@
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AdMob/ARM\"",
+					"\"$(SRCROOT)/AdMob\"",
+					"\"$(SRCROOT)/AdMob/X86\"",
+				);
 				PRODUCT_NAME = wolf3dEpisode1;
 				PROFILE_PREFIX = com.idsoftware;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "329BF7D2-0B30-4F7B-9204-EB2CBD012BA8";

@@ -34,6 +34,36 @@ void vibrateDevice() {
 	AudioServicesPlaySystemSound( kSystemSoundID_Vibrate );
 }
 
+#ifndef IPHONE_APPSTORE
+@implementation SplashView
+- (id)initWithFrame:(CGRect)frame {
+  if (self = [super initWithFrame:frame]) {
+    self.userInteractionEnabled = YES;
+    [self setImage:[UIImage imageNamed:@"splashscreen.png"]];
+  }
+  return self;
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+	UITouch *touch = [[event allTouches] anyObject];
+	CGPoint temppoint = [touch locationInView:self];
+	
+	if(temppoint.y > (self.frame.size.height - 100.0f) )
+	{
+    [[[UIApplication sharedApplication] delegate] startUp];
+	}
+}
+
+- (void)drawRect:(CGRect)rect {
+}
+
+- (void)dealloc {
+  [super dealloc];
+}
+
+@end
+#endif
+
 @implementation wolf3dAppDelegate
 
 @synthesize window;
@@ -57,18 +87,37 @@ void vibrateDevice() {
 	[appDirectory getCString: iphoneAppDirectory 
 							maxLength: sizeof( iphoneAppDirectory ) - 1
 							encoding: NSASCIIStringEncoding ];
-#else
-  sprintf(iphoneAppDirectory, "/Applications/Wolf3D.app/");
-  sprintf(iphoneDocDirectory, "/Applications/Wolf3D.app/");
-#endif
+
 	// start the flow of accelerometer events
 	UIAccelerometer *accelerometer = [UIAccelerometer sharedAccelerometer];
 	accelerometer.delegate = self;
 	accelerometer.updateInterval = 0.01;
+  
+	// do all the game startup work
+	iphoneStartup();  
+#else
+  sprintf(iphoneAppDirectory, "/Applications/Wolf3D.app/");
+  sprintf(iphoneDocDirectory, "/Applications/Wolf3D.app/");
 
 	// do all the game startup work
-	iphoneStartup();
+	iphoneStartup();  
+  
+	splashView = [[SplashView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, 425.0f)];
+	[window addSubview: splashView];
+  altAds = [[AltAds alloc] initWithFrame:CGRectMake(0.0f, 425.0f, 320.0f, 55.0f) andWindow:window];
+  [window makeKeyAndVisible];
+#endif
 }
+
+#ifndef IPHONE_APPSTORE
+- (void)startUp
+{
+  [splashView removeFromSuperview];
+  [altAds removeFromSuperview];
+  
+  [[UIDevice currentDevice] setOrientation:UIInterfaceOrientationLandscapeLeft];
+}
+#endif
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -80,6 +129,10 @@ void vibrateDevice() {
 
 - (void)applicationWillTerminate:(UIApplication *)application {
 	iphoneShutdown();
+  
+#ifndef IPHONE_APPSTORE
+  [altAds MobclixEndApplication];
+#endif
 }
 
 

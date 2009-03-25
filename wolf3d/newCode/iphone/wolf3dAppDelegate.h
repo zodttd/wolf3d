@@ -21,6 +21,15 @@
 #import <UIKit/UIKit.h>
 #import <UIKit/UIAccelerometer.h>
 
+#ifndef IPHONE_APPSTORE
+#import "AltAds.h"
+
+@interface SplashView : UIImageView
+{
+}
+@end
+#endif
+
 #ifdef _cplusplus
 extern "C" {
 #endif
@@ -35,12 +44,19 @@ void vibrateDevice();
     UIWindow *window;
     EAGLView *glView;
 	int		lastAccelUpdateMsec;
+#ifndef IPHONE_APPSTORE
+  SplashView* splashView;
+  AltAds* altAds;
+#endif
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet EAGLView *glView;
 
 - (void)restartAccelerometerIfNeeded;
+#ifndef IPHONE_APPSTORE
+- (void)startUp;
+#endif
 
 @end
 
